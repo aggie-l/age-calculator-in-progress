@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="inputs">
+      <div id="daySection" class="dateContainer">
+        <label for="dayInput">DAY</label>
+        <input type="number" min="1" max="31" id="dayInput" name="dayInput" placeholder="DD" required>
+        <div>
+          <span class="errorMessage"></span>
+        </div>
+      </div>
+
+      <div id="monthSection" class="dateContainer">
+        <label for="monthInput">MONTH</label>
+        <input type="number" min="1" max="12" id="monthInput" name="monthInput" placeholder="MM" required>
+        <div>
+          <span class="errorMessage"></span>
+        </div>
+      </div> 
+
+      <div id="yearSection" class="dateContainer">
+        <label for="yearInput">YEAR</label>
+        <input type="number" max="2023" id="yearInput" name="yearInput" placeholder="YYYY" required>
+        <div>
+          <span class="errorMessage"></span>
+        </div>
+      </div>
+    </div>
+    
+    <button type="submit">
+      <img src="./assets/images/icon-arrow.svg">
+    </button>
+    
+    <div id="result">
+      <div class="age"><span class="output" id="resyears">- -</span> years</div>
+      <div class="age"><span class="output" id="resmonths">- -</span> months</div>
+      <div class="age"><span class="output" id="resdays">- -</span> days</div>
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/aggie-l">agnese</a>.
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
